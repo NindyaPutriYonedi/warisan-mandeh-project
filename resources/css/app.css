@@ -1,0 +1,751 @@
+@import 'tailwindcss';
+
+/* =====================
+   GLOBAL
+===================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    color: #222;
+}
+
+section {
+    margin-bottom: 90px;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero-wrap {
+    background: #E2680B;
+    padding: 120px 0;
+}
+
+.hero-text {
+    padding-left: 30px; /* geser hero ke kanan */
+    color: #000000;
+}
+
+.hero-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.hero-desc {
+    font-size: 14px;
+    color: #000000;
+    max-width: 420px;
+    margin: 22px 0 28px;
+}
+
+.hero-img {
+    max-width: 400px; /* diperkecil lagi */
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+.btn-main {
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 26px;
+    padding: 11px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    color: #fff;
+    background: #E2680B;
+}
+
+/* =====================
+   WHY
+===================== */
+
+.why-box {
+    background: #E2680B;
+    padding: 44px 34px;             /* lebih lebar & lega */
+    border-radius: 18px;
+    min-height: 200px;        /* lebih tinggi */
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.why-box i {
+    font-size: 36px;                /* ICON DIPERBESAR */
+    color: #000000;
+    margin-bottom: 18px;
+}
+
+.why-box p {
+    font-size: 16px;                /* TEKS DIPERBESAR */
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 260px;
+    color: #000000;             /* agar tetap rapi */
+}
+
+/* =====================
+   CTA
+===================== */
+
+.cta-wrap{
+    background: transparent;   /* matikan background section */
+    padding: 0;
+}
+
+.cta-wrap .container{
+    background: #E2680B;
+    max-width: 1400px;          /* SAMA persis dengan .how-box */
+    width: 100%;
+    margin: 0 auto;            /* center */
+    padding: 80px 24px;        /* tinggi proporsional */
+    text-align: center;
+}
+
+.cta-wrap h6{
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 720px;
+    margin: 0 auto 14px;
+    text-align: center;
+}
+
+.cta-wrap p {
+    font-size: 19px;      /* SESUAI PERMINTAAN */
+    color: #000000;
+    opacity: 0.9;
+    margin-bottom: 22px;
+}
+
+.cta-wrap .btn {
+    background: #fff;
+    color: #000000;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* =====================
+   HOW TO ORDER
+===================== */
+
+.how-section {
+    background: #E2680B;
+}
+
+.how-img {
+    max-width: 320px;   /* SESUAI PERMINTAAN */
+}
+
+.how-box {
+    background: #ffffff;   /* SAMA SEPERTI HTO */
+    padding: 24px 18px;
+    border-radius: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* tengah horizontal */
+    justify-content: center;  /* tengah vertikal */
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.how-box i {
+    font-size: 29px;
+    color: #E2680B;
+}
+
+.cta-wrap h6{
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 720px;
+    margin: 0 auto 14px;
+    text-align: center;
+}
+
+.how-section .section-title{
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 720px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+
+.how-box p {
+    font-size: 14px;
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+
+/* =====================
+   TESTIMONIAL
+===================== */
+
+.carousel-item {
+    padding: 10px 0 30px;
+}
+
+.testi-box {
+    background: #E2680B;
+    padding: 38px 28px 30px;
+    border-radius: 18px;
+    border: 1px solid #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* QUOTE ICON */
+.testi-box .bi-quote {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    background: #E2680B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* RATING */
+/* .rating {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+} */
+
+/* MESSAGE */
+.testi-message {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* USER */
+.testi-user {
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =====================
+   FIX QUOTE ICON CLIPPING
+===================== */
+
+#testimonialCarousel,
+#testimonialCarousel .carousel-inner,
+#testimonialCarousel .carousel-item {
+    overflow: visible;
+}
+
+/* =====================
+   STAR RATING
+===================== */
+.rating {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.rating i {
+    font-size: 15px;
+    color: #FFD41D;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+}
+
+.rating-input {
+    display: flex;
+    gap: 6px;
+    flex-direction: row-reverse; /* tetap untuk arah bintang kiri → kanan */
+    justify-content: center; /* menempel kiri form */
+    margin: 0;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rating-input label i {
+    font-size: 26px;
+    color: #FFFFFF;
+    transition: .2s;
+}
+
+/* hover kiri → kanan */
+.rating-input label:hover i,
+.rating-input label:hover ~ label i {
+    color: #FFD41D;
+}
+
+/* selected kiri → kanan */
+.rating-input input:checked + label i,
+.rating-input input:checked + label ~ label i {
+    color: #FFD41D;
+}
+
+
+
+/* tombol orange */
+.btn-orange {
+    background-color: #E2680B;
+    color: #fff;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-orange:hover {
+    background-color: #E2680B;
+    color: #fff;
+}
+
+
+
+/* GLOBAL */
+.admin-body {
+    background: #f7f5ec;
+    font-family: 'Inter', sans-serif;
+}
+
+/* WRAPPER */
+.admin-wrapper {
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #E2680B;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* MENU */
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    opacity: 0.9;
+}
+
+/* LOGOUT */
+.logout {
+    margin-top: auto;
+}
+
+.logout button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CONTENT */
+.content {
+    padding: 25px 40px;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+/* STAT CARD */
+.stat-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+}
+
+.stat-card h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* CONTENT BOX */
+.content-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px;
+    height: 100%;
+}
+
+/* PENDING ORDER */
+.pending-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pending-item:last-child {
+    border-bottom: none;
+}
+
+/* === PRODUCT GRID === */
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: all 0.35s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* === IMAGE === */
+.product-image {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+/* === CONTENT === */
+.product-content {
+    padding: 14px;
+}
+
+.product-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* === BUTTON === */
+.product-btn {
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-size: 0.8rem;
+    background: transparent;
+    border: 1.5px solid #E2680B;
+    color: #E2680B;
+    text-decoration: none; /* hilangkan garis bawah */
+    transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+    background: #E2680B;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* IMAGE */
+.product-image-card {
+    background: #f8f3ea;
+    border-radius: 24px;
+    padding: 20px;
+    text-align: center;
+}
+.product-image-card img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* PRICE */
+.price-text {
+    color: #E2680B;
+    font-weight: 700;
+}
+
+/* ACTION CARD */
+.action-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* LABEL */
+.label-soft {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+}
+
+/* QTY */
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.qty-box button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.qty-box input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    background: transparent;
+}
+
+/* BUTTONS */
+.btn-buy {
+    background: #E2680B;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+.btn-cart {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #E2680B;
+    background: #fff;
+    color: #E2680B;
+}
+
+/* DESCRIPTION */
+.desc-card {
+    background: #fafafa;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;/* =====================
+   ADMIN LAYOUT (FIX)
+===================== */
+
+}
+
+.admin-body {
+    background: #f7f5ec;
+    font-family: 'Inter', sans-serif;
+}
+
+/* WRAPPER */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =====================
+   SIDEBAR (ORANGE)
+===================== */
+.sidebar {
+    width: 240px;
+    background: #E2680B;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* MENU */
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+/* HOVER */
+.menu a:hover {
+    background: #ffffff;
+    color: #E2680B;
+}
+
+/* ACTIVE */
+.menu a.active {
+    background: #ffffff;
+    color: #E2680B;
+    font-weight: 600;
+}
+
+/* ICON ikut berubah */
+.menu a i {
+    font-size: 18px;
+    transition: color 0.25s ease;
+}
+
+.menu a:hover i,
+.menu a.active i {
+    color: #E2680B;
+}
+
+/* LOGOUT */
+.logout {
+    margin-top: auto;
+}
+
+.logout button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+.logout button:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* =====================
+   CONTENT (KANAN)
+===================== */
+.content {
+    flex: 1;
+    padding: 28px 36px;
+    overflow-y: auto;
+    background: #f7f5ec;
+}
+
+.content-inner {
+    max-width: 1200px;
+}
+
+    /* FOOTER */
+    .footer {
+        background: #E2680B;
+        border-top: 1px solid #eee;
+        padding: 60px 0 30px;
+        margin-top: 80px;
+    }
+
+    .footer-title {
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .footer-desc {
+        color: #000000;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .footer-link {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+
+    .footer-link:hover {
+        color: #FFFFFF;
+    }
+
+    .footer-social a {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000000;
+        color: #000000;
+        margin-right: 10px;
+        transition: all .3s ease;
+    }
+
+    .footer-social a:hover {
+        background: var(--orange-main);
+        color: #fff;
+        border-color: var(--orange-main);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #eee;
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 0.85rem;
+        color: #777;
+    }
+
