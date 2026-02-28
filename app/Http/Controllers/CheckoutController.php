@@ -72,7 +72,7 @@ class CheckoutController extends Controller
         session()->forget('cart');
 
         // Redirect ke WhatsApp
-        $waNumber = "6289529639475";
+        $waNumber = "6281262264629";
         $url = "https://wa.me/{$waNumber}?text=" . urlencode($message);
 
         return redirect()->away($url);
