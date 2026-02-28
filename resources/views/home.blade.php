@@ -68,7 +68,7 @@
         <p>
             Kami menerima pesanan untuk oleh-oleh, arisan, kantor, dan berbagai acara lainnya
         </p>
-        <a href="https://wa.me/6289529639475?text=Halo%20Warisan%20Mandeh,%20saya%20ingin%20bertanya%20tentang%20menu."
+        <a href="https://wa.me/6281262264629?text=Halo%20Warisan%20Mandeh,%20saya%20ingin%20bertanya%20tentang%20menu."
    target="_blank"
    class="btn btn-outline-light btn-sm px-4">
     Chat Sekarang
