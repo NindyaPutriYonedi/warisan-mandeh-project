@@ -99,7 +99,7 @@ class CheckoutController extends Controller
         // Simpan item
         OrderItem::create([
             'order_id'     => $order->id,
-            'product_id'   => $product->id,     
+            'product_id'   => $product->id,
             'product_name' => $product->name,
             'quantity'     => $request->qty,
             'price'        => $product->price,
@@ -111,7 +111,7 @@ class CheckoutController extends Controller
                  . "x{$request->qty} - Rp "
                  . number_format($product->price * $request->qty, 0, ',', '.');
 
-        $url = "https://wa.me/6289529639475?text=" . urlencode($message);
+        $url = "https://wa.me/6281262264629?text=" . urlencode($message);
 
         return redirect()->away($url);
     }
